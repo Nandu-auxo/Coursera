@@ -108,7 +108,7 @@ public class Part3Extended {
     public void getAllGene(){
        FileResource fr = new FileResource("GRch38dnapart.fa");
        String dna = fr.asString();
-       /*StorageResource sr= new StorageResource();
+       StorageResource sr= new StorageResource();
        int startIndex = dna.indexOf("ATG");
        while(startIndex != -1){
            String gene = findGene(dna,startIndex);
@@ -123,7 +123,7 @@ public class Part3Extended {
                }
         }
         System.out.println("The number of genes : "+sr.size());
-        processGenes(sr);*/
+        processGenes(sr);
         System.out.println(countCtg(dna));
     }
     
